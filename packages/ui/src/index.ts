@@ -1,0 +1,1 @@
+export { default as ModManagerApp } from './components/ModManagerApp.js';

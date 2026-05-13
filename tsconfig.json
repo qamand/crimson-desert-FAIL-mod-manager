@@ -1,0 +1,72 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@modmanager/types": [
+        "packages/types/src/index.ts"
+      ],
+      "@modmanager/types/*": [
+        "packages/types/src/*"
+      ],
+      "@modmanager/core": [
+        "packages/core/src/index.ts"
+      ],
+      "@modmanager/fs": [
+        "packages/fs/src/index.ts"
+      ],
+      "@modmanager/ipc": [
+        "packages/ipc/src/index.ts"
+      ],
+      "@modmanager/ipc/mainHandlers": [
+        "packages/ipc/src/mainHandlers.ts"
+      ],
+      "@modmanager/ipc/preload": [
+        "packages/ipc/src/preload.ts"
+      ],
+      "@modmanager/logger": [
+        "packages/logger/src/index.ts"
+      ],
+      "@modmanager/security": [
+        "packages/security/src/index.ts"
+      ],
+      "@modmanager/ui": [
+        "packages/ui/src/index.ts"
+      ],
+      "@modmanager/papgt": [
+        "packages/papgt/src/index.ts"
+      ],
+      "@modmanager/converter": [
+        "packages/converter/src/index.ts"
+      ]
+    },
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./packages/types" },
+    { "path": "./packages/logger" },
+    { "path": "./packages/fs" },
+    { "path": "./packages/security" },
+    { "path": "./packages/core" },
+    { "path": "./packages/ipc" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/app" },
+    { "path": "./packages/papgt" },
+    { "path": "./packages/converter" }
+  ]
+}

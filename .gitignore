@@ -1,0 +1,4 @@
+node_modules/
+dist/
+*.tsbuildinfo
+modmanager-config.json

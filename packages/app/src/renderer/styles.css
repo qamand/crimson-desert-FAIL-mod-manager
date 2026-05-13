@@ -1,0 +1,145 @@
+:root {
+  color: #1d2329;
+  background: #f4f6f8;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  min-height: 36px;
+  border: 1px solid #a8b3bd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1d2329;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0 14px;
+}
+
+button:hover:not(:disabled) {
+  border-color: #24715d;
+  color: #164f42;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.app-shell {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 24px 0 32px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.app-header p {
+  margin: 6px 0 0;
+  color: #5d6872;
+  overflow-wrap: anywhere;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 0 18px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 16px;
+}
+
+.panel {
+  min-height: 240px;
+  border: 1px solid #d6dde3;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 18px;
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.panel ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.panel dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 18px;
+  margin: 0;
+}
+
+.panel dt {
+  color: #5d6872;
+}
+
+.panel dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.status {
+  border-radius: 6px;
+  margin: 0 0 16px;
+  padding: 10px 12px;
+}
+
+.status-error {
+  background: #ffe8e4;
+  color: #8d291d;
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    width: min(100vw - 24px, 1120px);
+  }
+
+  .app-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+appId: com.modmanager.desktop
+productName: Mod Manager
+asar: true
+directories:
+  output: release
+files:
+  - dist/**/*
+  - package.json
+  - ../core/dist/**/*
+  - ../fs/dist/**/*
+  - ../ipc/dist/**/*
+  - ../logger/dist/**/*
+  - ../security/dist/**/*
+  - ../types/dist/**/*
+extraMetadata:
+  main: dist/main.js
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+    - target: nsis
+      arch:
+        - x64
+portable:
+  artifactName: "${productName}-${version}-portable.${ext}"
+nsis:
+  artifactName: "${productName}-${version}-setup.${ext}"
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+publish:
+  provider: generic
+  url: https://example.invalid/modmanager/releases

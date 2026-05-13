@@ -1,0 +1,12 @@
+[2026-05-13T00:48:15.842Z] [INFO] [paths] Set: game=, mods=G:\Тест
+[2026-05-13T00:48:28.229Z] [INFO] [paths] Set: game=G:\SteamLibrary\steamapps\common\Crimson Desert, mods=G:\Тест
+[2026-05-13T00:50:17.854Z] [INFO] [game:start] Launched: G:\SteamLibrary\steamapps\common\Crimson Desert\bin64\CrimsonDesert.exe
+[2026-05-13T01:24:03.098Z] [INFO] [ModEngine] Removed: fat_stacks_999999.field.json
+[2026-05-13T01:24:03.099Z] [INFO] [mods] Removed: fat_stacks_999999.field.json
+[2026-05-13T01:49:23.124Z] [INFO] [ModEngine] Installed file mod: friendly_gain_x20 (1).json
+[2026-05-13T01:49:23.124Z] [INFO] [mods] Installed: friendly_gain_x20 (1).json
+[2026-05-13T01:49:26.876Z] [INFO] [ModEngine] Removed: friendly_gain_x20 (1).json
+[2026-05-13T01:49:26.876Z] [INFO] [mods] Removed: friendly_gain_x20 (1).json
+[2026-05-13T02:00:53.614Z] [INFO] [ModEngine] Removed: friendly_gain_x20.json
+[2026-05-13T02:00:53.614Z] [INFO] [mods] Removed: friendly_gain_x20.json
+[2026-05-13T03:31:19.019Z] [INFO] [ModEngine] Installed file mod: fat_stacks_100x.json

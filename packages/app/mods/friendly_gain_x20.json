@@ -1,0 +1,25 @@
+{
+  "name": "Trust Me 20x",
+  "version": "1.04.00",
+  "description": "Sets NPC friendly/trust gain to 100 (20x). Updated for 1.04.",
+  "author": "GildyBoye",
+  "patches": [
+    {
+      "game_file": "gamedata/dropsetinfo.pabgb",
+      "changes": [
+        {
+          "offset": 222572,
+          "label": "[Trust] Talk Gain 5 -> 100",
+          "original": "05000000",
+          "patched": "64000000"
+        },
+        {
+          "offset": 222580,
+          "label": "[Trust] Talk Gain 5 -> 100",
+          "original": "05000000",
+          "patched": "64000000"
+        }
+      ]
+    }
+  ]
+}
